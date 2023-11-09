@@ -1,0 +1,111 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d59851;
+    padding: 10px 20px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: url('assets/logo_ns.png') no-repeat;
+    background-size: 40px 40px;
+    animation: pohybLogo 5s ease-in-out;
+}
+
+.logo:hover {
+    animation: none;
+    transform: translateY(-20px);
+}
+
+@keyframes pohybLogo {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#logo > * {
+    margin-left: 10px;
+}
+
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: rgb(244, 239, 239);
+}
+
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo small {
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Nový styl pro navigační položky */
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-item {
+    padding: 8px 8px;
+    border-radius: 300px;
+    background-color: rgb(203, 203, 198);
+    color: rgb(79, 72, 72);
+    margin-right: 10px;
+   
+    text-decoration:solid;
+}
+.nav-item:hover {
+background-color: aliceblue;
+
+
+}
+
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-centre {
+    display: flex;
+   flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-centre img {
+    width: 30%;
+    height: auto;
+   
+
+  }

@@ -71,3 +71,4 @@ Status uživatele:
 Neználek, Objevovatel, Průzkumník, Dendrolog
 Jeho stromy (co vložil)
 
+AI layout https://www.figma.com/file/i6nx3oOcujKqn5ICD6gDJH/WireGen---AI-GPT-wireframe-generation-(Community)?type=design&mode=design&t=1jGi9WGqATKa9IPT-0

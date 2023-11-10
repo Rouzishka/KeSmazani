@@ -1,5 +1,21 @@
+@font-face {
+font-family: Roboto;
+src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Thin.ttf);
+    
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+
+
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
     
@@ -15,7 +31,7 @@ header {
 
 #logo {
     display: flex;
-    align-items: center;
+    align-items:center;
 }
 
 .logo {
@@ -57,15 +73,18 @@ header {
 }
 
 #logo small {
-    text-transform: uppercase;
+    text-transform:lowercase;
     font-size: 0.85em;
 }
 
 .topnav {
     display: flex;
     align-items: center;
+  
     
 }
+
+
 
 /* Nový styl pro navigační položky */
 .nav-list {
@@ -76,19 +95,44 @@ header {
 
 
 .nav-item {
-    padding: 8px 8px;
+    padding: 10px 10px;
     border-radius: 300px;
     background-color: rgb(203, 203, 198);
     color: rgb(79, 72, 72);
     margin-right: 10px;
    
-    text-decoration:solid;
+   
 }
-.nav-item:hover {
-background-color: aliceblue;
 
-
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
 }
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+nav ul a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a:hover, .aktivni a {
+    border-bottom: 2px solid #EF6534;
+}
+
 
 
 .main {
@@ -98,14 +142,46 @@ background-color: aliceblue;
 }
 
 .image-centre {
-    display: flex;
-   flex-wrap: wrap;
-    gap: 10px;
+    display:flexbox;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .image-centre img {
-    width: 30%;
+    width: 9%;
     height: auto;
    
 
+  }
+  
+  .grid-column {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .center-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .image-text p {
+    margin: 0;
+    font-size: 18px;
   }

@@ -1,0 +1,285 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+    }
+    @font-face {
+        font-family: Roboto;
+        src: url(fonts/Roboto-Thin.ttf);
+        
+    }
+    @font-face {
+        font-family: Roboto;
+        src: url(fonts/Roboto-Bold.ttf);
+    }
+    
+    
+    
+    body {
+        font-family: Roboto;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d59851;
+        padding: 10px 20px;
+    }
+    
+    #logo {
+        display: flex;
+        align-items:center;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+        background: url('assets/logo_ns.png') no-repeat;
+        background-size: 40px 40px;
+        animation: pohybLogo 5s ease-in-out;
+        z-index: 2;
+    }
+    .logo.sticky {
+        animation: none;
+    }
+    
+    .logo:hover {
+        animation: none;
+        transform: translateY(-20px);
+    }
+    
+    @keyframes pohybLogo {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+    
+    #logo > * {
+        margin-left: 10px;
+    }
+    
+    #logo h1 {
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        color: rgb(244, 239, 239);
+    }
+    
+    #logo h1 span {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    #logo small {
+        text-transform:lowercase;
+        font-size: 0.85em;
+    }
+    
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d59851;
+        padding: 10px 20px;
+        top: 0;
+        z-index: 1; /* Přidáno: Nastavení z-index */
+        position: relative; /* Přidáno: pozice je relativní, aby bylo možné nastavit výšku */
+        height: 60px; /* Přidáno: určuje výšku topnav */
+    }
+    
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        animation: fadeInDown 0.5s;
+    }
+    
+    
+    
+    
+    /* Styl pro navigační položky */
+    
+    
+    
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    nav ul li {
+        padding: 0 25px;
+        margin: 0 5px;
+        font-size: 1em;
+        line-height: 4.3em;
+    }
+    nav ul a {
+        color: white;
+        padding: 8px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    nav ul a:hover, .aktivni a {
+        border-bottom: 2px solid #EF6534;
+    }
+    
+    
+    
+    .main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .image-centre {
+        display:flexbox;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .image-centre img {
+        width: 9%;
+        height: auto;
+       
+    
+      }
+      
+      .grid-column {
+        display:flexbox;
+        grid-template-columns: 1fr;
+      }
+    
+      .center-content {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .image-container {
+        position: relative;
+        text-align: center;
+      }
+      
+      .image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+      }
+      
+      .image-text p {
+        margin: 0;
+        font-size: 18px;
+      }
+      
+
+/* zaoblení rohů formu */
+form {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"]
+ {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+input[type="submit"] {
+    background-color: #d59851;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* zaoblení rohů */
+a {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #d59851;
+    color: white;
+    text-decoration: none;
+}
+
+/* odkaz na registraci na konci formu */
+#login-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+/* patička */
+footer {
+    background-color: #d59851;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
+
+/* Přidaný kód pro obrázky ikon */
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+/* Styl pro registrační odkaz */
+.register-link {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.register-link a {
+    color: rgb(248, 246, 243); /* Barva odkazu */
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

@@ -79,9 +79,22 @@ header {
 
 .topnav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-  
-    
+    background-color: #d59851;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 1; /* Přidáno: Nastavení z-index */
+    position: relative; /* Přidáno: pozice je relativní, aby bylo možné nastavit výšku */
+    height: 60px; /* Přidáno: určuje výšku topnav */
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeInDown 0.5s;
 }
 
 
@@ -185,3 +198,4 @@ nav ul a:hover, .aktivni a {
     margin: 0;
     font-size: 18px;
   }
+  

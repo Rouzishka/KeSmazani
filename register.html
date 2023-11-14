@@ -3,31 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrace | Úkoly</title>
-    <link rel="stylesheet" href="../MyWork/style/styles.css">
+    <title>Registrace | Najdi Strom</title>
+    
+    <link rel="stylesheet" href="register_styles.css">
+    
 </head>
 <body>
     <div class="panel"></div>
     <header>
-        <a href="index.html"></a>
-       <a></a> <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.939339 10.9393C0.353552 11.5251 0.353552 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.80761 11.0711 0.80761 10.4853 1.3934L0.939339 10.9393ZM32 10.5L2 10.5L2 13.5L32 13.5L32 10.5Z" fill="black"/>
-            </svg>  </a>           
-<h1>Vytvořit účet</h1>
+        <div class="topnav" id="myTopnav">
+            <div id="logo">
+                <div class="logo"></div>
+                <h1>Najdi<span>STROM</span></h1>
+                <small>krůček do přírody</small>
+            </div>
+            <div id="ul" class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="aktivni"><a href="all_trees.html">Seznam stromů</a></li>
+                        <li><a href="found_tree.html">Najdi strom</a></li>
+                        <li><a href="add_tree.html">Přidej strom</a></li>
+                        <li><a href="register.html">Registruj se </a></li>
+                        <li><a href="login.html">Přihlaš se</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="grid-column center-content image-container">
+        <img src="assets/lone-tree.jpg" style="width: 100%;" alt="Obrázek dubu na pozadí">
+        <div class="image-text">
+            <h1 class="">Mapujeme stromy</h1>            <p>Chcete vědět, kde je nejstarší lípa nebo letitý buk?</p>                    </div>
+        </div>
+    <main>
+        <h1 class="center-content">Vytvořit účet</h1>
+        <form>
+            <label for="username">Uživatelské jméno:</label>
+            <input type="text" id="username" name="username" required>
 
-</header>
-<main>
-<form action="register.html"method="post">
-<label for="email"class="input-label">Email</label>
-<input type="email"name="email"id="email"class="input" required>
-<label for="email"class="input-label">Heslo</label>
-<input type="email"name="email"id="email"class="input" required>
-<label for="email"class="input-label">Heslo znovu</label>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-<input type="password"name="confirm-password"id="confirm-password"class="input" required>
-<label for="terms"class="checkbox-label"></label>
-<input type="checkbox"name="terms"id="terms"class="checkbox"required>
-</form>
+            <label for="password">Heslo:</label>
+            <input type="password" id="password" name="password" required>
 
-</div>
+            <label for="confirm-password">Potvrzení hesla:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label>
+                <input type="checkbox" id="terms" name="terms" required>
+                Souhlasím s všeobecnými obchodními podmínkami
+            </label>
+
+            <input type="submit" value="Registrovat">
+        </form>
+    </main>
+
+    <!-- Paticka -->
+    <footer>
+        <div class="footer-column">
+            <p>&copy; 2023 NajdiSTROM. Všechna práva vyhrazena.</p>
+        </div>
+        <div class="footer-column">
+            <!-- ikony pro socky  -->
+            <a href="#" target="_blank" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+</html>

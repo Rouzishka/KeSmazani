@@ -88,20 +88,17 @@
         background-color: #d59851;
         padding: 10px 20px;
         top: 0;
-        z-index: 1; /* Přidáno: Nastavení z-index */
-        position: relative; /* Přidáno: pozice je relativní, aby bylo možné nastavit výšku */
-        height: 60px; /* Přidáno: určuje výšku topnav */
+        z-index: 1000;
+        position: sticky;
+        height: 60px;
     }
     
-    
-    .sticky {
+    .topnav.sticky {
         position: fixed;
         top: 0;
         width: 100%;
         animation: fadeInDown 0.5s;
     }
-    
-    
     
     
     /* Styl pro navigační položky */
@@ -112,20 +109,18 @@
         margin: 0;
         list-style-type: none;
         display: flex;
-    }
-    nav ul {
-        margin: 0;
-        list-style-type: none;
-        display: flex;
         align-items: center;
         height: 100%;
+        justify-content: flex-end; /* pokus o nav vpravo */
     }
+    
     nav ul li {
         padding: 0 25px;
         margin: 0 5px;
         font-size: 1em;
         line-height: 4.3em;
     }
+    
     nav ul a {
         color: white;
         padding: 8px 0;
@@ -232,6 +227,7 @@ a {
     background-color: #d59851;
     color: white;
     text-decoration: none;
+
 }
 
 /* odkaz na registraci na konci formu */
@@ -240,6 +236,13 @@ a {
     text-align: center;
     margin-top: 15px;
 }
+
+#login-button {
+    display: block;
+    text-align: center;
+    margin-top: 15px;}
+
+
 /* patička */
 footer {
     background-color: #d59851;

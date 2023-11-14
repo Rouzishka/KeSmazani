@@ -1,4 +1,4 @@
-# MyWork
+# MojePrace
 Závěrečná práce Coding School
 Popis projektu: 
 
